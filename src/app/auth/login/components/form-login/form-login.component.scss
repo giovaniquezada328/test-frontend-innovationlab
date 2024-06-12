@@ -1,0 +1,72 @@
+.title-login {
+font-family: Inter;
+font-size: 29.3px;
+font-weight: 400;
+line-height: 35.46px;
+letter-spacing: -0.01em;
+text-align: left;
+
+}
+.custom-btn {
+  background: #D8FF00;
+  font-family: Inter;
+  font-size: 23.44px;
+  font-weight: 400;
+  line-height: 28.37px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  border-color: #D8FF00;
+}
+.forgot-password {
+font-family: Inter;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: -0.01em;
+text-align: left;
+color: #00000099;
+margin-top: 5px;
+}
+.btn-register {
+top: 704px;
+left: 966px;
+padding: 6.91px 13.82px 6.91px 13.82px;
+gap: 13.82px;
+border-radius: 8px 8px 8px 8px;
+opacity: 0px;
+background: #000000;
+color: #fff;
+font-size: 12.24px;
+font-weight: 700;
+line-height: 14.81px;
+letter-spacing: normal;
+}
+.btn-google {
+  border: 0.3px solid #00000099;
+  border-radius: 8px 8px 8px 8px;
+  width: 150px;
+}
+
+.btn-facebook {
+  border: 0.3px solid #1877F2;
+  border-radius: 8px 8px 8px 8px;
+  width: 150px;
+  background: #1877F2;
+}
+
+.btn-apple {
+  border: 0.3px solid #00000099;
+  border-radius: 8px 8px 8px 8px;
+  width: 150px;
+  background: #000;
+}
+:host ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+  background-color: #000 ;
+}
+
+:host ::ng-deep  .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+  background-color: #fff ;
+  transform: scale(0.6);
+
+}
+

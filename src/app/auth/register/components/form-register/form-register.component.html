@@ -1,0 +1,96 @@
+<form [formGroup]="form">
+  <div class="row">
+    <div class="col-4">
+      <div class="form-group">
+        <mat-label for="name">Nombre Comercial</mat-label>
+        <mat-form-field appearance="outline">
+          <!-- <mat-label>Nombre Comercial</mat-label> -->
+          <input id="name" matInput placeholder="Nombre Comercial" formControlName="name">
+        </mat-form-field>
+      </div>
+
+    </div>
+    <div class="col-4">
+      <div class="form-group">
+        <label for="phone">Teléfono de la empresa</label>
+        <mat-form-field appearance="outline">
+          <!-- <mat-label>Nombre Comercial</mat-label> -->
+          <input id="phone" matInput placeholder="Teléfono" formControlName="phone">
+        </mat-form-field>
+      </div>
+
+    </div>
+    <div class="col-4">
+      <div class="form-group">
+        <label for="file">CSF</label>
+        <input type="file" name="file" id="file" class="inputfile" formControlName="file" />
+        <label for="file">Upload</label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <div class="form-group">
+        <label for="filetwo">Identificación Oficial</label>
+        <input type="file" name="filetwo" id="filetwo" class="inputfile"  formControlName="filetwo"/>
+        <label for="filetwo">Upload</label>
+      </div>
+    </div>
+  </div>
+  <h3 class="mt-3">Dirección</h3>
+  <div class="row">
+    <div class="col-6">
+      <div class="form-group">
+        <mat-label for="street">Calle</mat-label>
+        <mat-form-field appearance="outline">
+          <input id="street" matInput placeholder="Calle" formControlName="street">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="form-group">
+        <mat-label for="numberOutside">Numero Exterior</mat-label>
+        <mat-form-field appearance="outline">
+          <input id="numberOutside" matInput placeholder="Nombre Comercial" formControlName="numberOutside">
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <div class="form-group">
+        <mat-label for="numberInside">Numero Interior</mat-label>
+        <mat-form-field appearance="outline">
+          <input id="numberInside" matInput placeholder="Numero Interior" formControlName="numberInside">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="form-group">
+        <mat-label for="colony">Colonia</mat-label>
+        <mat-form-field appearance="outline">
+          <input id="colony" matInput placeholder="Nombre Comercial" formControlName="colony">
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <div class="form-group">
+        <mat-label for="zipCode">Código Póstal</mat-label>
+        <mat-form-field appearance="outline">
+          <input id="zipCode" matInput placeholder="CP" formControlName="zipCode">
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <p><mat-checkbox formControlName="terms"><span class="check-text">Acepto los Términos y condiciones y autorizo el uso de mis datos de acuerdo a la Declaración de Privacidad.</span></mat-checkbox></p>
+    <p><mat-checkbox formControlName="promotions"><span class="check-text">Acepto recibir información por correo</span></mat-checkbox></p>
+  </div>
+  <div class="row justify-content-center">
+    <button class="btn btn-create" (click)="onRegister()" [disabled]="!form.valid"> Crear
+  </button>
+  </div>
+
+</form>

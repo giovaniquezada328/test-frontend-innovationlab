@@ -1,0 +1,49 @@
+.toolbar-custom {
+  background: #D8FF00;
+}
+.toolbar-login {
+  background: #FFF;
+}
+.nav-spacer {
+  flex: 1 1 auto;
+}
+mat-form-field {
+  height: 20px;
+ }
+ .search-bar{
+  margin-left: 1rem;
+  background-color: #ffffff;
+  height: 40px;
+  display: flex;
+  padding: 10px;
+  min-width: fit-content;
+  width: 30rem;
+}
+.search-form{
+  background: #ffffff;
+  outline: none;
+  border-style: none;
+  width: 50rem;
+  font-size: 1.2rem;
+  width: max-content;
+}
+input{
+  height: 2rem;
+}
+mat-form-field {
+  height: 20px;
+ }
+.btn-register-car {
+  margin-left: 1rem;
+  width: 163px;
+  height: 40px;
+  background-color: #ffffff;
+  color: #000;
+
+}
+.margin-custom-menu {
+  margin-left: 5rem;
+}
+.logo-custom {
+  font-weight: bold;
+}

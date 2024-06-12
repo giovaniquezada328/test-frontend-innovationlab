@@ -1,0 +1,40 @@
+<mat-toolbar *ngIf="module !== 'login'" class="toolbar-custom">
+  <mat-toolbar-row >
+    <span class="logo-custom">LOGO</span>
+    <div class="search-bar">
+      <mat-icon>search</mat-icon>
+      <form class="search-form">
+          <input type="text" matInput>
+      </form>
+    </div>
+    <button class="btn btn-register-car">Registra tu auto</button>
+    <span class="nav-spacer"></span>
+
+    <button mat-icon-button >
+      <mat-icon fontSet="material-icons-outlined" [matBadge]="totalNotifications" matBadgeColor="warn" matBadgeSize="small">notifications_outline</mat-icon>
+  </button>
+    <button mat-icon-button >
+      <mat-icon fontSet="material-icons-outlined" [matBadge]="totalCart" matBadgeColor="warn" matBadgeSize="small">shopping_cart_outline</mat-icon>
+  </button>
+
+
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <div class="margin-custom-menu">
+      <a mat-button>Categorias</a>
+      <a mat-button>Ofertas</a>
+      <a mat-button>Tiendas Oficiales</a>
+      <a mat-button>Vender</a>
+      <a mat-button>Marcas</a>
+    </div>
+    <span class="nav-spacer"></span>
+    <a mat-button (click)="navigate('login');">Ingresar</a>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-toolbar *ngIf="module === 'login'" class="toolbar-login">
+  <span>LOGO</span>
+  <span class="nav-spacer"></span>
+  <button mat-icon-button >
+    <mat-icon fontSet="material-icons-outlined" >menu_outline</mat-icon>
+</button>
+</mat-toolbar>
