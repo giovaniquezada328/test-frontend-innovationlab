@@ -1,0 +1,64 @@
+<div class="container">
+<h3 class="title-search">Bujia Mazda 3 de 2015</h3>
+<p class="results-search">680,896 resultados</p>
+<p class="menu-navigation ">Motor > bujias</p>
+
+<div class="row">
+  <div class="col-2">
+    <mat-card class="filters-slides">
+      <mat-card-title-group>
+        <mat-card-subtitle>Llega manana </mat-card-subtitle> <span class="nav-spacer"></span> <mat-slide-toggle></mat-slide-toggle>
+      </mat-card-title-group>
+    </mat-card>
+    <mat-card class="filters-slides">
+      <mat-card-title-group>
+        <mat-card-subtitle>Envío gratis</mat-card-subtitle> <span class="nav-spacer"></span> <mat-slide-toggle></mat-slide-toggle>
+      </mat-card-title-group>
+    </mat-card>
+    <mat-card class="filters-slides">
+      <mat-card-title-group>
+        <mat-card-subtitle>Tiendas oficiales</mat-card-subtitle> <span class="nav-spacer"></span> <mat-slide-toggle></mat-slide-toggle>
+      </mat-card-title-group>
+    </mat-card>
+    <mat-accordion>
+      <mat-expansion-panel >
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Marcas
+      </mat-panel-title>
+
+    </mat-expansion-panel-header>
+    <mat-selection-list #brandss>
+      <mat-list-option *ngFor="let brand of brands">
+        {{brand.nombre}}
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-expansion-panel>
+</mat-accordion>
+  </div>
+  <div class="col-10">
+    <div class="row">
+      <mat-card style="height: 60px;">
+        <mat-card-title-group>
+          <mat-card-subtitle>Ordenar por:
+            <mat-form-field>
+              <mat-select [(value)]="selected">
+                <mat-option *ngFor="let select of selectData" [value]="select.value">
+                  {{select.viewValue}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </mat-card-subtitle>
+          <span class="nav-spacer"></span>
+          <mat-icon >space_dashboard</mat-icon>
+          <mat-icon >menu</mat-icon>
+        </mat-card-title-group>
+      </mat-card>
+    </div>
+    <div class="row mt-5">
+      <div class="col-3" *ngFor="let row of products">
+        <app-offer [offers]="row"></app-offer>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

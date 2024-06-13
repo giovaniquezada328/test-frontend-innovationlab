@@ -4,10 +4,10 @@
     <div class="search-bar">
       <mat-icon>search</mat-icon>
       <form class="search-form">
-          <input type="text" matInput>
+          <input type="text" matInput style="border: none; height: 1.5rem;">
       </form>
     </div>
-    <button class="btn btn-register-car">Registra tu auto</button>
+    <button class="btn btn-register-car" (click)="navigate('layout/search');">Registra tu auto</button>
     <span class="nav-spacer"></span>
 
     <button mat-icon-button >

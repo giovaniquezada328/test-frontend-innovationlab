@@ -12,6 +12,9 @@
       <mat-label>Contraseña</mat-label>
       <input matInput placeholder="Contraseña" formControlName="password">
     </mat-form-field>
+    <mat-error *ngIf="errorText" >
+              <strong>{{errorText}}</strong>
+    </mat-error>
   </div>
   <div class="row mb-4">
     <mat-slide-toggle >Recuerdame</mat-slide-toggle>

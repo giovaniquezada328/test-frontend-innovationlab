@@ -1,0 +1,27 @@
+<div  >
+  <img src="../../../../assets/img/home.png" alt="">
+</div>
+<div class="container">
+  <div class="row mt-5">
+    <h3 class="title-section">Categorías</h3>
+    <div class="col" *ngFor="let row of category">
+      <app-category  [title]="row.title" [img]="row.img"></app-category>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <h3 class="title-section">Ofertas</h3>
+    <div class="col" *ngFor="let row of offers">
+      <app-offer [offers]="row"></app-offer>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <h3 class="title-section">Tiendas Oficiales</h3>
+      <app-official-store></app-official-store>
+  </div>
+  <div class="row mt-5">
+    <h3 class="title-section">Basados en tu última visita</h3>
+    <div class="col" *ngFor="let row of lastVisit">
+      <app-offer [offers]="row"></app-offer>
+    </div>
+  </div>
+</div>

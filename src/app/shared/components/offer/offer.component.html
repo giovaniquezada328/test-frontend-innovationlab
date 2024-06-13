@@ -1,0 +1,23 @@
+<mat-card *ngIf="offers">
+  <mat-card-header>
+    <mat-card-subtitle><span>SKU: {{ offers.sku }}</span>    </mat-card-subtitle>
+    <mat-icon fontSet="material-icons-outlined">favorite_outline</mat-icon>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="row justify-content-center">
+      <img [src]="offers.imagen ? offers.imagen : '../../../../assets/img/no-image.png'" alt="">
+    </div>
+    <div class="row justify-content-end">
+      <p class="qualification"><mat-icon style="vertical-align: middle;" >star</mat-icon> <span>4.9</span></p>
+    </div>
+    <div class="row">
+      <p class="name-offer">{{ offers.nombre ?  offers.nombre : 'No hay informacion'}}</p>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <!-- <div class="row"> -->
+      <p class="discount">{{ (offers.precio ? offers.precio : 1840) | currency:'':'symbol-narrow' }}</p>
+      <p class="price" (click)="addCart()"> {{ (offers.precio ? offers.precio : 1842) | currency:'':'symbol-narrow' }}</p>
+    <!-- </div> -->
+  </mat-card-actions>
+</mat-card>

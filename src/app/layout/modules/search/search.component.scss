@@ -1,0 +1,49 @@
+
+.nav-spacer {
+  flex: 1 1 auto;
+}
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+:host ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+  background-color: #000 ;
+}
+:host ::ng-deep  .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+  background-color: #fff ;
+}
+:host ::ng-deep   .mat-slide-toggle-thumb {
+  transform: scale(0.8);
+}
+
+.filters-slides {
+  height: 50px;
+  margin-bottom: 20px;
+}
+.title-search {
+font-family: 'Inter';
+font-size: 29.3px;
+font-weight: 400;
+line-height: 35.46px;
+letter-spacing: -0.01em;
+text-align: left;
+
+}
+.results-search {
+font-family: 'Inter';
+font-size: 18.75px;
+font-weight: 400;
+line-height: 22.69px;
+letter-spacing: -0.01em;
+text-align: left;
+}
+
+.menu-navigation {
+font-family: 'Inter';
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: -0.01em;
+text-align: left;
+color: #9A9FA5;
+
+}
