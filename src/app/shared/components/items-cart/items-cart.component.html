@@ -4,7 +4,7 @@
     <div class="col">
       <img [src]="item.item.imagen" alt="" width="96" height="96">
     </div>
-    <div class="col">
+    <div class="col-md-4 col-xs-6">
       <p>{{ item.item.nombre }}</p>
       <p><button mat-button class="btn-delete-custom" (click)="deleteItem(item)">ELIMINAR</button><mat-icon fontSet="material-icons-outlined">favorite_outline</mat-icon></p>
     </div>
