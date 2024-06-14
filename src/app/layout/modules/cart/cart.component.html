@@ -14,4 +14,14 @@
   <div class="row mt-5">
     <h3 class="title-section">Comprados juntos habitualmente</h3>
   </div>
+  <div class="row mt-5">
+    <div class="col-md-3 col-xs-6" *ngFor="let row of together">
+      <app-offer [offers]="row"></app-offer>
+    </div>
+    <div class="col text-center align-self-center">
+      <h3 class="price-total">Precio Total</h3>
+      <p class="price-total-together">$ 850.00 MXN</p>
+      <button mat-button class="btn-together">Agregar al carrito</button>
+    </div>
+  </div>
   </div>

@@ -101,6 +101,12 @@
   </div>
 </div>
 <div class="row mt-5">
-  <mat-card>Revisar articulos y envio</mat-card>
+  <mat-card><h2>Revisar articulos y envio</h2>
+    <div class="row mt-3" *ngFor="let item of Cart">
+      <div class="col name-review">{{ item.item.nombre}} </div>
+      <div class="col price-review ">{{ item.item.precio | currency: '': 'symbol-narrow' }} MXN <br> <p class="parts">Pieza {{ item.itemQunatity }}</p> </div>
+    </div>
+  </mat-card>
 </div>
+
 </div>

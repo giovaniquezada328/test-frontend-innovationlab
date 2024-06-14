@@ -18,4 +18,5 @@ export interface OffersInterface {
     marca_autoparte:        null;
     subsubcategoria:        null;
     precio:                 number;
+    titulo: string;
 }
