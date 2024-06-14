@@ -5,31 +5,10 @@
   <div class="row">
     <div class="col-8">
       <mat-card class="cards"><mat-icon class="align-icon" (click)="navigate('/layout/search')">arrow_circle_left</mat-icon>Seguir Comprando</mat-card>
-      <app-items-cart></app-items-cart>
+      <app-items-cart *ngFor="let item of Cart" [item]="item" (delete)="refreshCart($event)" (refreshCart)="refreshCart($event)"></app-items-cart>
     </div>
     <div class="col-4">
-      <mat-card class="cards">Resumen de Compra</mat-card>
-      <mat-card class="cards">
-        <mat-card-content>
-          <div class="row mb-5 ">
-            <div class="col">Subtotal <br> (4)</div>
-            <div class="col"><span>$10000.00 MXN</span></div>
-            <div class=" mt-2 border-row"></div>
-          </div>
-          <div class="row mb-5">
-            <div class="col">Envio</div>
-            <div class="col"><span>$250.00 MXN</span></div>
-            <div class=" mt-3 border-row"></div>
-          </div>
-          <div class="row mb-5">
-            <div class="col">TOTAL</div>
-            <div class="col"><span>$1250.00 MXN</span></div>
-          </div>
-          <div class="row justify-content-center">
-            <button class="btn btn-paid" (click)="navigate('/layout/payment')">Pagar</button>
-          </div>
-        </mat-card-content>
-      </mat-card>
+      <app-summary [noOfItems]="noOfItems" [subTotal]="subTotal" [shipment]="shipment" [total]="total"></app-summary>
     </div>
   </div>
   <div class="row mt-5">

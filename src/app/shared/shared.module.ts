@@ -7,6 +7,7 @@ import { CategoryComponent } from './components/category/category.component';
 import { OfferComponent } from './components/offer/offer.component';
 import { OfficialStoreComponent } from './components/official-store/official-store.component';
 import { ItemsCartComponent } from './components/items-cart/items-cart.component';
+import { SummaryComponent } from './components/summary/summary.component';
 @NgModule({
   declarations: [
     TopnavComponent,
@@ -14,7 +15,8 @@ import { ItemsCartComponent } from './components/items-cart/items-cart.component
     CategoryComponent,
     OfferComponent,
     OfficialStoreComponent,
-    ItemsCartComponent
+    ItemsCartComponent,
+    SummaryComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +29,8 @@ import { ItemsCartComponent } from './components/items-cart/items-cart.component
     CategoryComponent,
     OfferComponent,
     OfficialStoreComponent,
-    ItemsCartComponent
+    ItemsCartComponent,
+    SummaryComponent
   ]
 })
 export class SharedModule { }

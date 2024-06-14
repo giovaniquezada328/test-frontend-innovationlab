@@ -1,0 +1,51 @@
+<mat-card class="cards">Resumen de Compra</mat-card>
+      <mat-card class="cards">
+        <mat-card-content>
+          <div class="row mb-5 ">
+            <div class="col">Subtotal <br> ({{ noOfItems }})</div>
+            <div class="col"><span>{{ subTotal | currency: '': 'symbol-narrow'}} MXN</span></div>
+            <div class=" mt-2 border-row"></div>
+          </div>
+          <div class="row mb-5">
+            <div class="col">Envio</div>
+            <div class="col"><span>{{ shipment | currency: '': 'symbol-narrow'}} MXN</span></div>
+            <div class=" mt-3 border-row"></div>
+          </div>
+          <div class="row mb-5">
+            <div class="col">TOTAL</div>
+            <div class="col"><span>{{ total | currency: '': 'symbol-narrow' }} MXN</span></div>
+          </div>
+          <div *ngIf="module === 'summary'" class="row">
+            <p class="information">Todas las transacciones son seguras y están encriptadas</p>
+            <mat-form-field appearance="outline">
+              <mat-label>Titular de la tarjeta</mat-label>
+              <input matInput placeholder="Titular de la tarjeta">
+            </mat-form-field>
+          </div>
+          <div *ngIf="module === 'summary'" class="row mb-5">
+            <div class="col">
+              <mat-form-field appearance="outline">
+                <mat-label>Numero de tarjeta</mat-label>
+                <input matInput placeholder="Titular de la tarjeta">
+              </mat-form-field>
+            </div>
+            <div class="col"><button mat-button> <img src="../../../../assets/img/link.png" alt=""></button></div>
+          </div>
+          <div class="row justify-content-center">
+            <button class="btn btn-paid" (click)="navigate('/layout/payment')">Pagar</button>
+          </div>
+        </mat-card-content>
+</mat-card>
+<div class="row mt-5">
+  <button class="btn custom-btn-paid-secure">
+    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <mask id="mask0_2_1741" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="-1" width="25" height="25">
+      <rect x="0.291016" y="-0.000854492" width="23.959" height="23.959" fill="#D9D9D9"/>
+      </mask>
+      <g mask="url(#mask0_2_1741)">
+      <path d="M10.7731 14.9735H13.7679L13.1939 11.754C13.5267 11.5876 13.7887 11.3464 13.9801 11.0303C14.1714 10.7141 14.2671 10.3647 14.2671 9.98205C14.2671 9.43299 14.0716 8.96296 13.6806 8.57196C13.2896 8.18097 12.8196 7.98547 12.2705 7.98547C11.7214 7.98547 11.2514 8.18097 10.8604 8.57196C10.4694 8.96296 10.2739 9.43299 10.2739 9.98205C10.2739 10.3647 10.3696 10.7141 10.5609 11.0303C10.7523 11.3464 11.0143 11.5876 11.3471 11.754L10.7731 14.9735ZM12.2705 21.9615C9.9578 21.3792 8.04857 20.0523 6.54281 17.9809C5.03706 15.9094 4.28418 13.6092 4.28418 11.0802V4.9906L12.2705 1.99573L20.2568 4.9906V11.0802C20.2568 13.6092 19.5039 15.9094 17.9982 17.9809C16.4924 20.0523 14.5832 21.3792 12.2705 21.9615ZM12.2705 19.8651C14.0009 19.3161 15.4318 18.2179 16.5631 16.5708C17.6945 14.9236 18.2602 13.0934 18.2602 11.0802V6.36325L12.2705 4.11709L6.28076 6.36325V11.0802C6.28076 13.0934 6.84646 14.9236 7.97785 16.5708C9.10925 18.2179 10.5401 19.3161 12.2705 19.8651Z" fill="#0B4650"/>
+      </g>
+      </svg>
+    Compra 100% Segura
+</button>
+</div>
