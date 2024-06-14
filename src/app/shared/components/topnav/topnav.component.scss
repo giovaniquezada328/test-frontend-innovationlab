@@ -16,7 +16,6 @@ mat-form-field {
   height: 40px;
   display: flex;
   padding: 10px;
-  min-width: fit-content;
   width: 30rem;
 }
 .search-form{
@@ -44,3 +43,14 @@ input{
 .logo-custom {
   font-weight: bold;
 }
+
+@media only screen and (max-width: 600px) {
+  .search-bar {
+    width: 5rem;
+  }
+  .margin-custom-menu {
+    margin-left: 0;
+    overflow-x: auto;
+  }
+}
+

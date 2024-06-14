@@ -18,19 +18,19 @@ export class HomeComponent implements OnInit {
     },
     {
       title: 'Frenos',
-      img: '../../../../assets/img/1.png',
+      img: '../../../../assets/img/3.png',
     },
     {
       title: 'Rines',
-      img: '../../../../assets/img/1.png',
+      img: '../../../../assets/img/2.png',
     },
     {
       title: 'Baterias',
-      img: '../../../../assets/img/1.png',
+      img: '../../../../assets/img/4.png',
     },
     {
       title: 'Asientos',
-      img: '../../../../assets/img/1.png',
+      img: '../../../../assets/img/5.png',
     },
 
   ];
